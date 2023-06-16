@@ -11,7 +11,7 @@ const CryptocurrencyItem = props => {
 
   return (
     <li className="cryptocurrency-item">
-      <div className="logo-and-title-container">
+      <div className="logo-and-title-container" data-testid="loader">
         <img
           className="currency-logo"
           src={currencyLogoUrl}

@@ -40,7 +40,7 @@ class CryptocurrencyTracker extends Component {
   }
 
   renderLoader = () => (
-    <div data-testid="loader">
+    <div>
       <Loader type="Rings" color="#ffffff" height={80} width={80} />
     </div>
   )
@@ -49,7 +49,7 @@ class CryptocurrencyTracker extends Component {
     const {isLoading} = this.state
 
     return (
-      <div className="app-container">
+      <div className="app-container" data-item="loader">
         {isLoading ? this.renderLoader() : this.renderCryptocurrenciesList()}
       </div>
     )
